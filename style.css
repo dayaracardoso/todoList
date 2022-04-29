@@ -1,0 +1,115 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(195,104,255);
+    background: radial-gradient(circle, rgba(195,104,255,1) 0%, rgba(214,0,255,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 320px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+}
+
+.board h3 {
+    background-color: #9b1af1;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.add-card {
+    background-color: rgba(200, 200, 200, 0.8);
+    margin: 4px;
+    border-radius: 2px;
+}
+
+.add-card p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 2px 6px;
+}
+
+p.remove {
+    color: #999;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    padding-top: 1px;
+    padding-left: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+p.remove:hover {
+    color: #FFF;
+    background-color: orange;
+}
+
+.add-card:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+li {
+    font-size: 14px;
+    background-color: #FFF;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 5px;
+    min-width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    cursor: move;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .board {
+        width: 90%;
+    }
+}
